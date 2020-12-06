@@ -25,4 +25,4 @@ def bezout(a, b):
     
     
      """ on va construire une suite récuurente pour calculer le reste rn, une suite qn pour calculer le quotient 
-        et deux suite double vn et un. la condition d'arret est le reste nulle """
+        et deux suite double vn et un. la condition d'arret est le reste nul """
