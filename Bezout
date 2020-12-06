@@ -1,0 +1,28 @@
+#question2
+def bezout(a, b):
+    if a>b:
+        r0 = a
+        u0 = 1
+        v0 = 0
+        r1 = b
+        u1 = 0
+        v1 = 1
+    else:
+        r0 = b
+        u0 = 1
+        v0 = 0
+        r1 = a
+        u1 = 0
+        v1 = 1
+        
+    while r1!=0:
+        q= r0//r1
+        r0,r1 = r1,r0%r1
+        u0 ,v0,u1,v1,= u1,v1,u0 -q*u1,v0 - q*v1
+    print("Bezout(",a,",",b ,")","#PGCD:",r0,"(u=",u0,")","*",a,"+","(v=",v0,")","*",b,"=",a)
+    
+    
+    
+    
+     """ on va construire une suite récuurente pour calculer le reste rn, une suite qn pour calculer le quotient 
+        et deux suite double vn et un. la condition d'arret est le reste nulle """
