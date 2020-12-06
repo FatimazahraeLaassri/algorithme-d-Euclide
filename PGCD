@@ -1,0 +1,13 @@
+#question 1 
+def pgcd(a,b): 
+    if abs(a)>abs(b):
+        r0=a
+        r1=b
+    else:
+        r0=b
+        r1=a
+    while r0%r1!=0:
+        r = r0%r1
+        r0 = r1
+        r1 = r 
+    return r1
